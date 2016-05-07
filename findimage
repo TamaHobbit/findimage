@@ -1,1 +1,2 @@
+# Print images in directory $1 with high similarity to image $2
 find $1 -exec ./printifsame {} $2 \;

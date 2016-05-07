@@ -1,4 +1,4 @@
-
+# Compare the two images passed; if they are more similar than 10, print the name and value to stdout and to logfile.txt
 VALUE=`./compare $2 $1`
 RESULT=`echo "$VALUE<10" | bc`
 if [ $RESULT -eq 1 ]

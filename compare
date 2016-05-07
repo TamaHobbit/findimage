@@ -1,1 +1,2 @@
+# prints the difference between two images; a web version of the same image will give about 20, the exact same image is 0.
 convert $1 $2 -compose Difference -composite  -format '%[fx:mean*100]' info:
