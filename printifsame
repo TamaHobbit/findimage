@@ -1,0 +1,8 @@
+
+VALUE=`./compare $2 $1`
+RESULT=`echo "$VALUE<10" | bc`
+if [ $RESULT -eq 1 ]
+then
+  echo "$2 $VALUE" >> logfile.txt
+  echo "$2 $VALUE"
+fi

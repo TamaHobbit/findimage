@@ -1,0 +1,1 @@
+convert $1 $2 -compose Difference -composite  -format '%[fx:mean*100]' info:
